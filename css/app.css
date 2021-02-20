@@ -120,8 +120,8 @@ body {
 }
 @media screen and (max-width: 425px) {
   .price-grid {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     grid-template-columns: 23.75em;
     grid-template-rows: 18.25em 18.25em;
   }
@@ -140,7 +140,7 @@ body {
     border-radius: 0px 0px 10px 10px;
   }
 }
-@media screen and (max-width: 425px) and (max-width: 375px) {
+@media screen and (max-width: 375px) {
   h2 {
     font-size: 1em;
   }
