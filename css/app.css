@@ -5,6 +5,28 @@
   font-size: 16px;
 }
 
+h1 {
+  font-size: 1.5em;
+  color: #2ab2af;
+}
+
+h2 {
+  font-size: 1.3em;
+  color: #c0df34;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+p {
+  color: #98a6bd;
+}
+
+body {
+  background-color: #e5eff5;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -14,4 +36,75 @@
 }
 
 /* STYLE.SASS */
+.price-grid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 19.8125em 19.8125em;
+  grid-template-rows: 13.5625em 16.25em;
+  justify-content: center;
+  align-content: center;
+}
+
+.price-grid-item {
+  padding: 1.9em 2.5em 0em 2.5em;
+}
+
+.price-grid-item-1 {
+  background-color: #fff;
+  grid-column: span 2;
+  border-radius: 10px 10px 0px 0px;
+}
+.price-grid-item-1 p {
+  line-height: 25px;
+}
+
+.price-grid-item-2 {
+  background-color: #2BB3B1;
+  grid-row: 2/3;
+  color: #e5eff5;
+  border-radius: 0px 0px 0px 10px;
+}
+.price-grid-item-2 .price {
+  font-size: 2em;
+}
+.price-grid-item-2 h3 {
+  margin-top: 0.625em;
+}
+.price-grid-item-2 p {
+  font-size: 0.8em;
+  color: #e5eff5;
+}
+
+.price-grid-item-3 {
+  background-color: #60c6c5;
+  grid-row: 2/3;
+  color: #e5eff5;
+  border-radius: 0px 0px 10px 0px;
+}
+.price-grid-item-3 h3 {
+  margin-top: 0.625em;
+}
+.price-grid-item-3 p {
+  font-size: 0.75em;
+  color: #e5eff5;
+  line-height: 8px;
+}
+
+.button {
+  background-color: #c0df34;
+  color: #e5eff5;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 5px 5px 0.5em #1a6b6a;
+}
+.button:hover {
+  background-color: #d0e767;
+  color: #fff;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
 /* DEVICES.SASS *//*# sourceMappingURL=app.css.map */

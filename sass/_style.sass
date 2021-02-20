@@ -1,1 +1,65 @@
 /* STYLE.SASS */
+
+.price-grid
+    height: 100vh
+    display: grid
+    grid-template-columns: 19.8125em 19.8125em
+    grid-template-rows: 13.5625em 16.25em
+    justify-content: center
+    align-content: center
+
+.price-grid-item
+    padding: 1.9em 2.5em 0em 2.5em
+
+.price-grid-item-1
+    background-color: #fff
+    grid-column: span 2
+    border-radius: 10px 10px 0px 0px
+
+    p
+        line-height: 25px
+
+.price-grid-item-2
+    background-color: $bgMainColor
+    grid-row: 2 / 3
+    color: $lightGray
+    border-radius: 0px 0px 0px 10px
+
+    .price
+        font-size: 2em
+
+    h3
+        margin-top: 0.625em
+    p
+        font-size: 0.8em
+        color: $lightGray
+
+.price-grid-item-3
+    background-color: tint($bgMainColor, 25%)
+    grid-row: 2 / 3
+    color: $lightGray
+    border-radius: 0px 0px 10px 0px
+
+    h3
+        margin-top: 0.625em
+
+    p
+        font-size: 0.75em
+        color: $lightGray
+        line-height: 8px
+
+.button
+    background-color: $brightYellow
+    color: $lightGray
+    width: 100%
+    padding: 15px 0
+    margin-top: 15px
+    border-radius: 5px
+    border: none
+    box-shadow: 5px 5px 0.5em shade($bgMainColor, 40%)
+
+    &:hover
+        background-color: tint($brightYellow, 25%)
+        color: #fff
+        font-size: 1.1em
+        cursor: pointer
